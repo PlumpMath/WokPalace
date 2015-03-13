@@ -44,14 +44,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Client\Kitchen.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ingredients\Meat\Meat.cs" />
+    <Compile Include="Ingredients\Meat\SushiBeef.cs" />
+    <Compile Include="Ingredients\Meat\SushiChicken.cs" />
+    <Compile Include="Ingredients\Sauce\iSauce.cs" />
+    <Compile Include="Ingredients\SideDish\iSideDish.cs" />
+    <Compile Include="Ingredients\Vegetable\iVegtable.cs" />
+    <Compile Include="Products\QuinSushiMeal.cs" />
+    <Compile Include="Products\QuinWrapMeal.cs" />
+    <Compile Include="Products\QuinWokMeal.cs" />
+    <Compile Include="Products\FizzWrapMeal.cs" />
+    <Compile Include="Products\FizzWokMeal.cs" />
+    <Compile Include="Products\FizzSushiMeal.cs" />
+    <Compile Include="Products\AliSushiMeal.cs" />
+    <Compile Include="Products\AliWokMeal.cs" />
+    <Compile Include="Products\AliWrapMeal.cs" />
+    <Compile Include="WokPalace_Abstract_Factory\Meal.cs" />
+    <Compile Include="Ingredients\Meat\WokBeef.cs" />
+    <Compile Include="Ingredients\Meat\WokChicken.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WokPalace_Abstract_Factory\iMealIngredientFactory.cs" />
+    <Compile Include="WokPalace_Abstract_Factory\SushiMealFactory.cs" />
+    <Compile Include="WokPalace_Abstract_Factory\WokMealFactory.cs" />
+    <Compile Include="WokPalace_Abstract_Factory\WrapMealFactory.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -74,6 +97,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
